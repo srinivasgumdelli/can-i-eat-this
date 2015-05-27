@@ -1,0 +1,16 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+#Ignore all other files for the rails project
+*.DS_Store
+
+#Ignore all original files after git merge
+*.orig
