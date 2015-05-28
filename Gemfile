@@ -14,6 +14,7 @@ gem 'autoprefixer-rails'
 gem 'smart_listing'
 gem 'devise'
 gem 'cocoon'
+gem 'turbolinks'
 
 group :development, :test do
   gem 'rspec-rails'
