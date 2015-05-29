@@ -14,3 +14,6 @@
 
 #Ignore all original files after git merge
 *.orig
+
+#Rubymine files
+.idea
