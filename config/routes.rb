@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  root 'recommendations#index'
-  
-  resources :recommendations
+  resources :recommendations, :path => '/', :only => [:index]
 
   resources :codes
 
