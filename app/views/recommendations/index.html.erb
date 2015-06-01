@@ -7,6 +7,7 @@
         <div class="row">
           <%= label_tag 'I have the following health conditions' %>
         </div>
+
         <div class="row">
           <% @conditions.each do |condition| %>
               <%= check_box_tag 'conditions[]', condition.id,
@@ -14,17 +15,45 @@
                                 :id => 'condition-checkbox' %>
               <%= condition.condition_name %>
           <% end %>
-        </div><br/>
+        </div>
+        <br/>
+
         <div class="row">
           <div class="col-lg-15">
             <%= label_tag 'I want to eat' %>
-            <%= text_field_tag 'food', nil, placeholder: 'Food, eg: Pizza', class: 'form-control'  %>
+            <%= text_field_tag 'food', nil, placeholder: 'Food, eg: Pizza', class: 'form-control' %>
+          </div>
+        </div>
+        <br/>
+
+        <div class="row">
+          <%= submit_tag 'Can I eat it?', class: 'btn btn-block btn-success' %>
+        </div>
+        <br/>
+
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <span class="glyphicon glyphicon-ok-circle text-success center-block" style="font-size:6.5em; text-align:center;"></span>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <span class="glyphicon glyphicon-remove-circle text-muted center-block" style="font-size:6.5em; text-align:center;"></span>
           </div>
         </div><br/>
-        <div class="row">
-          <%= submit_tag 'Can I Eat it?', class: 'btn btn-block btn-success' %>
-        </div>
-  <% end %>
 
-  </div>
+        <div class="row text-center table-responsive">
+          <table class="table table-bordered table-striped table-condensed">
+            <tr>
+              <th class="text-center">Ingredient</th>
+              <th class="text-center">Recommended?</th>
+              <th class="text-center">Reason</th>
+            </tr>
+            <tr>
+              <td>Milk</td>
+              <td>No</td>
+              <td>Lactose Intolerance</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+  <% end %>
 </div>
