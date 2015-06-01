@@ -13,7 +13,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'autoprefixer-rails'
 gem 'smart_listing'
 gem 'devise'
-gem 'cocoon'
+# gem 'cocoon'
 gem 'turbolinks'
 
 group :development, :test do
@@ -27,19 +27,19 @@ group :development, :test do
   gem 'newrelic_rpm'
 end
 
-group :test do
-  gem 'capybara-webkit'
-  gem 'shoulda-matchers', require: false
-  gem 'capybara'
-  gem 'launchy'
-  gem 'cucumber'
-  gem 'cucumber-rails', require: false
-  gem 'database_cleaner'
-end
+# group :test do
+#   gem 'capybara-webkit'
+#   gem 'shoulda-matchers', require: false
+#   gem 'capybara'
+#   gem 'launchy'
+#   gem 'cucumber'
+#   gem 'cucumber-rails', require: false
+#   gem 'database_cleaner'
+# end
 
 # for heroku
 group :production do
   gem 'rails_12factor'
 end
 
-ruby '2.2.0'
+ruby '2.1.2'
